@@ -62,9 +62,9 @@ const CustomerSection = ({ itemData }) => {
                     </div>
                 </div>
 
-                <CarouselContent>
+                <CarouselContent >
                     {itemData.map((item, index) => (
-                        <CarouselItem key={index} className="sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
+                        <CarouselItem key={index} className=" sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
                             <Card>
                                 <CardContent className="p-4">
                                     <ItemDetails review={item} />

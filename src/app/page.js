@@ -281,6 +281,8 @@ export default function Home() {
       <CustomerSection itemData={DummyData} />
 
 
+
+
     </main>
   );
 }
