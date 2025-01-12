@@ -1,10 +1,11 @@
+import Image from 'next/image'
 import React from 'react'
 
 const Footer = () => {
     return (
 
         <div className='w-full bg-white pt-20  '>
-            <div className='w-full sm:max-w-screen-2xl  relative rounded-t-2xl  bg-gray-300'>
+            <div className='w-full sm:max-w-screen-2xl  relative'>
                 <div className='max-w-screen-2xl sm:w-full px-4 absolute -top-20 z-10 '>
                     {/* Newsletter Box */}
                     <div className='w-full sm:max-w-screen-2xl bg-black rounded-2xl px-8 py-10'>
@@ -29,10 +30,9 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className='w-full sm:max-w-screen-2xl bg-gray-300 rounded-2xl relative z-0  sm:px-6 lg:px-8 mt-16'>
+            <div className='w-full sm:max-w-screen-2xl   relative z-0 rounded-t-2xl bg-[#F0F0F0] sm:px-6 lg:px-8 mt-16'>
                 <div className='h-[300px] sm:h-[100px]'></div>
                 <div className=' grid grid-cols-1 p-4 md:grid-cols-4 gap-8'>
-                    {/* Brand Section */}
                     <div className='space-y-6 md:col-span-1'>
                         <h2 className='text-3xl font-black'>SHOP.CO</h2>
                         <p className='text-gray-600'>
@@ -52,7 +52,6 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Company Section */}
                     <div>
                         <h3 className='font-bold mb-4'>COMPANY</h3>
                         <ul className='space-y-3 text-gray-600'>
@@ -63,7 +62,6 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* Help Section */}
                     <div>
                         <h3 className='font-bold mb-4'>HELP</h3>
                         <ul className='space-y-3 text-gray-600'>
@@ -74,7 +72,6 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    {/* FAQ Section */}
                     <div>
                         <h3 className='font-bold mb-4'>FAQ</h3>
                         <ul className='space-y-3 text-gray-600'>
@@ -83,6 +80,39 @@ const Footer = () => {
                             <li><a href="#">Orders</a></li>
                             <li><a href="#">Payments</a></li>
                         </ul>
+                    </div>
+                    <div className='sm:flex sm:justify-between sm:items-center sm:col-span-4 '>
+                        <h3 className='font-normal text-gray-400 mb-4'>Shop.co © 2000-2023, All Rights Reserved</h3>
+                        <div className='flex items-center gap-1 '>
+                            <Image
+                                src='/Badge.png'
+                                alt='logo'
+                                width={100}
+                                height={40}
+                                className='h-[70px] w-[100px] object-contain'
+                            />
+                            <Image
+                                src='/Badge-2.png'
+                                alt='logo'
+                                width={100}
+                                height={40}
+                                className='h-[70px] w-[100px] object-contain'
+                            />
+                            <Image
+                                src='/Badge-3.png'
+                                alt='logo'
+                                width={100}
+                                height={40}
+                                className='h-[70px] w-[100px] object-contain'
+                            />
+                            <Image
+                                src='/Badge-4.png'
+                                alt='logo'
+                                width={100}
+                                height={40}
+                                className='h-[70px] w-[100px] object-contain'
+                            />
+                        </div>
                     </div>
                 </div>
 
