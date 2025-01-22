@@ -206,7 +206,7 @@ export default function Home() {
     }
   ]
   return (
-    <main className="w-full bg-white">
+    <main className="w-full sm:max-w-screen-2xl mx-auto bg-white">
       <div className="w-full sm:max-w-screen-2xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
         {/* Container for flex column on mobile, position relative on desktop */}
         <div className="flex flex-col sm:block relative min-h-fit sm:h-[500px] w-full">
@@ -247,7 +247,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="w-full bg-black py-6">
+      {/* <div className="w-full bg-black py-6">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex flex-wrap justify-center sm:justify-between items-center gap-6 sm:gap-3">
             {brands.map((brand) => (
@@ -262,6 +262,22 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </div> */}
+
+      <div className="  px-4 sm:px-6 py-3 sm:py-4 ">
+        <div className="grid grid-cols-3 max-w-full bg-black h-[150px] px-4 py-5 gap-2 justify-evenly items-center place-items-center ">
+          {brands.map((brand) => (
+            <div key={brand.name} className="h-8 relative ">
+              <Image
+                src={brand.src}
+                alt={`${brand.name} logo`}
+                width={100}
+                height={32}
+                className="brightness-0 invert object-contain h-full w-auto"
+              />
+            </div>
+          ))}
         </div>
       </div>
 
@@ -283,6 +299,6 @@ export default function Home() {
 
 
 
-    </main>
+    </main >
   );
 }

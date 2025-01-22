@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const DressStyle = () => {
@@ -10,55 +11,63 @@ const DressStyle = () => {
                 <div className='grid grid-cols-1 w-full sm:grid-cols-3 gap-4 sm:max-w-[1000px] h-auto my-6 sm:my-9'>
 
 
-                    <div className='relative h-[150px] sm:h-[300px] rounded-2xl overflow-hidden'>
-                        <div className='relative h-full w-full'>
-                            <Image
-                                src='/grid1.png'
-                                fill
-                                alt='Dress 1'
-                                className='object-cover'
-                            />
-                            <div className='absolute inset-4 text-2xl font-semibold'>Casual</div>
+                    <Link href='/category/casual'>
+                        <div className='relative h-[150px] sm:h-[300px] rounded-2xl overflow-hidden'>
+                            <div className='relative h-full w-full'>
+                                <Image
+                                    src='/grid1.png'
+                                    fill
+                                    alt='Dress 1'
+                                    className='object-cover'
+                                />
+                                <div className='absolute inset-4 text-2xl font-semibold'>Casual</div>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
 
 
-                    <div className='relative h-[150px] w-full sm:h-[300px] sm:col-span-2 rounded-2xl overflow-hidden'>
-                        <div className='relative h-full w-full'>
-                            <Image
-                                src='/grid2.png'
-                                fill
-                                alt='Dress 2'
-                                className='object-cover '
-                            />
-                            <div className='absolute inset-4 text-2xl font-semibold'>Formals</div>
+                    <Link href='/category/formals'>
+                        <div className='relative h-[150px] w-full sm:h-[300px] sm:col-span-2 rounded-2xl overflow-hidden'>
+                            <div className='relative h-full w-full'>
+                                <Image
+                                    src='/grid2.png'
+                                    fill
+                                    alt='Dress 2'
+                                    className='object-cover '
+                                />
+                                <div className='absolute inset-4 text-2xl font-semibold'>Formals</div>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
 
-                    <div className='relative h-[150px] sm:h-[300px] sm:col-span-2 rounded-2xl overflow-hidden'>
-                        <div className='relative h-full w-full'>
-                            <Image
-                                src='/grid3.png'
-                                fill
-                                alt='Dress 3'
-                                className='object-cover'
-                            />
-                            <div className='absolute inset-4 text-2xl font-semibold'>Party</div>
+                    <Link href='/category/party'>
+                        <div className='relative h-[150px] sm:h-[300px] sm:col-span-2 rounded-2xl overflow-hidden'>
+                            <div className='relative h-full w-full'>
+                                <Image
+                                    src='/grid3.png'
+                                    fill
+                                    alt='Dress 3'
+                                    className='object-cover'
+                                />
+                                <div className='absolute inset-4 text-2xl font-semibold'>Party</div>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
 
 
-                    <div className='relative h-[150px] sm:h-[300px] rounded-2xl overflow-hidden'>
-                        <div className='relative h-full w-full'>
-                            <Image
-                                src='/grid4.png'
-                                fill
-                                alt='Dress 4'
-                                className='object-cover'
-                            />
-                            <div className='absolute inset-4 text-2xl font-semibold'>Gym</div>
+                    <Link href='/category/gym'>
+                        <div className='relative h-[150px] sm:h-[300px] rounded-2xl overflow-hidden'>
+                            <div className='relative h-full w-full'>
+                                <Image
+                                    src='/grid4.png'
+                                    fill
+                                    alt='Dress 4'
+                                    className='object-cover'
+                                />
+                                <div className='absolute inset-4 text-2xl font-semibold'>Gym</div>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
                 </div>
             </div>
 

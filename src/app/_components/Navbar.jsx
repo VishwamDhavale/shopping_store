@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu, Search, ShoppingBag, UserCircle, UserPen } from 'lucide-react';
+import { Separator } from '@radix-ui/react-separator';
 
 
 
@@ -11,7 +12,7 @@ const Navbar = () => {
         { label: 'Brands', href: '#' }
     ];
     return (
-        <header className="sticky top-0 z-50 bg-white w-full border-b  ">
+        <header className="sticky top-0 z-50 bg-white w-full   ">
             <nav className="w-full sm:max-w-screen-2xl mx-auto px-4 sm:px-6 py-3 sm:py-4 ">
                 <div className="flex items-center justify-between h-14">
                     {/* Left Section - Logo and Menu */}
@@ -59,6 +60,8 @@ const Navbar = () => {
                     </div>
                 </div>
             </nav>
+
+            <Separator className='my-5 ' />
         </header>
     )
 }

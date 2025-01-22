@@ -41,7 +41,7 @@ const CustomerSection = ({ itemData }) => {
 
 
     return (
-        <div className="w-full px-4 sm:max-w-screen-2xl sm:px-6 py-4 sm:py-4">
+        <div className="w-full px-4 sm:max-w-screen-2xl my-6 sm:px-6 py-4 sm:py-4">
             <Carousel
                 setApi={setApi}
                 className="w-full relative" // Added relative positioning
@@ -65,11 +65,9 @@ const CustomerSection = ({ itemData }) => {
                 <CarouselContent >
                     {itemData.map((item, index) => (
                         <CarouselItem key={index} className=" sm:basis-1/2 md:basis-1/3 lg:basis-1/4">
-                            <Card>
-                                <CardContent className="p-4">
-                                    <ItemDetails review={item} />
-                                </CardContent>
-                            </Card>
+
+                            <ItemDetails review={item} />
+
                         </CarouselItem>
                     ))}
                 </CarouselContent>
@@ -80,7 +78,7 @@ const CustomerSection = ({ itemData }) => {
 
 const ItemDetails = ({ review }) => {
     return (
-        <div className="p-4 border rounded-lg shadow-sm flex flex-col gap-4 w-72">
+        <div className="p-4 border rounded-lg shadow-sm flex flex-col gap-4 h-full">
 
             <div className="flex items-center gap-1">
                 {Array.from({ length: review.rating }).map((_, index) => (
