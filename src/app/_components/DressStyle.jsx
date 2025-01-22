@@ -11,63 +11,71 @@ const DressStyle = () => {
                 <div className='grid grid-cols-1 w-full sm:grid-cols-3 gap-4 sm:max-w-[1000px] h-auto my-6 sm:my-9'>
 
 
-                    <Link href='/category/casual'>
-                        <div className='relative h-[150px] sm:h-[300px] rounded-2xl overflow-hidden'>
-                            <div className='relative h-full w-full'>
+
+                    <div className='relative h-[150px] sm:h-[300px] rounded-2xl overflow-hidden'>
+                        <div className='relative h-full w-full'>
+                            <Link href='/category/casual'>
                                 <Image
                                     src='/grid1.png'
                                     fill
                                     alt='Dress 1'
                                     className='object-cover'
                                 />
-                                <div className='absolute inset-4 text-2xl font-semibold'>Casual</div>
-                            </div>
+                            </Link>
+                            <div className='absolute inset-4 text-2xl font-semibold'>Casual</div>
                         </div>
-                    </Link>
+                    </div>
 
 
-                    <Link href='/category/formals'>
-                        <div className='relative h-[150px] w-full sm:h-[300px] sm:col-span-2 rounded-2xl overflow-hidden'>
-                            <div className='relative h-full w-full'>
+
+
+                    <div className='relative h-[150px] w-full sm:h-[300px] sm:col-span-2 rounded-2xl overflow-hidden'>
+                        <div className='relative h-full w-full'>
+                            <Link href='/category/formals'>
                                 <Image
                                     src='/grid2.png'
                                     fill
                                     alt='Dress 2'
                                     className='object-cover '
                                 />
-                                <div className='absolute inset-4 text-2xl font-semibold'>Formals</div>
-                            </div>
-                        </div>
-                    </Link>
+                            </Link>
 
-                    <Link href='/category/party'>
-                        <div className='relative h-[150px] sm:h-[300px] sm:col-span-2 rounded-2xl overflow-hidden'>
-                            <div className='relative h-full w-full'>
+                            <div className='absolute inset-4 text-2xl font-semibold'>Formals</div>
+                        </div>
+                    </div>
+
+
+                    <div className='relative h-[150px] sm:h-[300px] sm:col-span-2 rounded-2xl overflow-hidden'>
+                        <div className='relative h-full w-full'>
+                            <Link href='/category/party'>
                                 <Image
                                     src='/grid3.png'
                                     fill
                                     alt='Dress 3'
                                     className='object-cover'
                                 />
-                                <div className='absolute inset-4 text-2xl font-semibold'>Party</div>
-                            </div>
+                            </Link>
+                            <div className='absolute inset-4 text-2xl font-semibold'>Party</div>
                         </div>
-                    </Link>
+                    </div>
 
 
-                    <Link href='/category/gym'>
-                        <div className='relative h-[150px] sm:h-[300px] rounded-2xl overflow-hidden'>
-                            <div className='relative h-full w-full'>
+
+
+                    <div className='relative h-[150px] sm:h-[300px] rounded-2xl overflow-hidden'>
+                        <div className='relative h-full w-full'>
+                            <Link href='/category/gym'>
                                 <Image
                                     src='/grid4.png'
                                     fill
                                     alt='Dress 4'
                                     className='object-cover'
                                 />
-                                <div className='absolute inset-4 text-2xl font-semibold'>Gym</div>
-                            </div>
+                            </Link>
+                            <div className='absolute inset-4 text-2xl font-semibold'>Gym</div>
                         </div>
-                    </Link>
+                    </div>
+
                 </div>
             </div>
 
